@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registro de Autos</title>
+    <!-- Enlace a Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+
+        <form>
+            <div class="row">
+                <div class="form-group">
+                    <h1 class="text-left my-5">REGISTRO DE AUTOS</h1>
+                </div>
+                <div class="col-md-3">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="id_coche" name="id_coche" placeholder="id coche">
+                                <label class="form-label" for="id_coche">ID Coche:</label>
+                                <div class="form-group">
+                                    <label for="id_movidoa">Tipo de Combustible:</label>
+                                    <select class="form-control" id="id_movidoa" name="id_movidoa" required>
+                                        <option value="1">Gasolina</option>
+                                        <option value="2">Diésel</option>
+                                        <option value="3">Eléctrico</option>
+                                    </select>
+                                </div>
+                    
+                                <div class="form-group">
+                                    <label for="id_tipocoche">Tipo de Coche:</label>
+                                    <select class="form-control" id="id_tipocoche" name="id_tipocoche" required>
+                                        <option value="1">Carro deportivo</option>
+                                        <option value="2">Camioneta</option>
+                                        <option value="3">Familiar</option>
+                                    </select>
+                                </div>
+                    
+                                <div class="form-group">
+                                    <label for="id_estado">Estado:</label>
+                                    <select class="form-control" id="id_estado" name="id_estado" required>
+                                        <option value="1">Nuevo</option>
+                                        <option value="2">Usado</option>
+                                    </select>
+                                </div>
+                    
+                                <div class="form-group">
+                                    <label for="id_marca">Marca:</label>
+                                    <select class="form-control mb-2" id="id_marca" name="id_marca" required>
+                                        <option value="1">Mercedes benz</option>
+                                        <option value="2">Rolls Royce</option>
+                                        <option value="3">Ferrari</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <div class="form-floating">
+                                        <input class="form-control mb-2" type="text" name="fecha" id="fecha"placeholder="fecha" >
+                                        <label for="fecha">Fecha:</label>
+                                    </div>
+                                </div>
+                            </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="form-group">
+                        <div class="form-floating">
+                            <input type="integer" class="form-control mb-2" id="id_user" name="usuario" maxlength="11" required placeholder="usuario">
+                            <label for="usuario">Usuario:</label>
+
+                        </div>
+                    </div>
+        
+                    <div class="form-group">
+                        <div class="form-floating">
+                            <input type="text" class="form-control mb-2" id="modelo" name="modelo" maxlength="60" required placeholder="modelo">
+                            <label for="modelo">Modelo:</label>
+
+                        </div>
+                    </div>
+        
+                    <div class="form-group">
+                        <div class="form-floating">
+                            <input type="text" class="form-control mb-2 form-control-sm" id="anio" name="anio" maxlength="4" required placeholder="anio">
+                            <label for="anio">Año:</label>
+
+                        </div>
+
+                    </div>
+        
+                    <div class="form-group">
+                        <div class="form-floating">
+                            <div class="form-floating">
+                                <input class="form-control mb-2" type="text" name="detalle" id="detalle"placeholder="detalle">
+                                <label for="detalle">Detalle:</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-floating">
+                            <input class="form-control mb-2" type="integer" name="caja" id="caja"placeholder="caja" >
+                            <label for="caja">Caja:</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-floating">
+                            <input class="form-control mb-2" type="text" name="motor" id="motor" placeholder="motor">
+                            <label for="motor">Motor:</label>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-5">
+                    <img src="carro.jpg" alt="Imagen de Auto" class="img-fluid" >
+
+                </div>
+
+
+            </div> 
+        </form>
+        <form>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <div class="form-floating">
+                            <input class="form-control mb-2" input type="text" name="precio" id="precio" placeholder="precio">
+                            <label for="precio">Precio:</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-floating">
+                            <input class="form-control mb-2" type="text" name="moneda" id="moneda" maxlength="3"  placeholder="moneda">
+                            <label for="moneda">Moneda:</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-floating">
+                            <input class="form-control mb-2" type="text" name="cc_pic01" id="cc_pic01" maxlength="85" placeholder="Descripcion 1">
+                            <label for="cc_pic01">CC Pic01:</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-floating">
+                            <input class="form-control mb-2" type="text" name="cc_pic02" id="cc_pic02" maxlength="85" placeholder="Descripcion 2">
+                            <label for="cc_pic02">CC Pic02:</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-floating">
+                            <input class="form-control mb-2" type="text" name="cc_pic03" id="cc_pic03" maxlength="85" placeholder="Descripcion 3">
+                            <label for="cc_pic03">CC Pic03:</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-floating">
+                            <input class="form-control mb-2 form-control-sm" type="text" name="cc_desctac" id="cc_desctac" maxlength="2"  placeholder="precio">
+                            <label for="cc_desctac">CC Desctac:</label>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary btn-warning">Registrar Auto </button> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>

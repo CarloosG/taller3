@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registro de Autos</title>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        select, input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        input[type="submit"] {
+            background-color: #048823;
+            color: white;
+            border: none;
+            padding: 15px 20px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #057e09;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">REGISTRO DE AUTOS</h1>
+    <form >
+        <label for="id_coche">ID Coche:</label>
+        <input type="text" name="id_coche" id="id_coche" required>
+
+        <label for="id_movidoa">Tipo de Combustible:</label>
+        <select name="id_movidoa" id="id_movidoa" required>
+            <option value="1">Gasolina</option>
+            <option value="2">Diésel</option>
+            <option value="3">Eléctrico</option>
+        </select>
+
+        <label for="id_tipocoche">Tipo de Coche:</label>
+        <select name="id_tipocoche" id="id_tipocoche" required>
+            <option value="1">Carro deportivo</option>
+            <option value="2">Camioneta</option>
+            <option value="3">Familiar</option>
+        </select>
+
+        <label for="id_estado">Estado:</label>
+        <select name="id_estado" id="id_estado" required>
+            <option value="1">Nuevo</option>
+            <option value="2">Usado</option>
+        </select>
+
+        <label for="id_marca">Marca:</label>
+        <select name="id_marca" id="id_marca" required>
+            <option value="1">Mercedes Benz</option>
+            <option value="2">Rolls Royce</option>
+            <option value="3">Ferrari</option>
+        </select>
+
+        <label for="id_user">Usuario:</label>
+        <select name="id_user" id="id_user" required>
+            <option value="1">Usuario1</option>
+            <option value="2">Usuario2</option>
+            <option value="3">Usuario3</option>
+        </select>
+
+        <label for="modelo">Modelo:</label>
+        <input type="text" name="modelo" id="modelo" maxlength="60" required>
+
+        <label for="anio">Año:</label>
+        <input type="text" name="anio" id="anio" maxlength="4" required>
+
+        <label for="detalle">Detalle:</label>
+        <textarea name="detalle" id="detalle"></textarea>
+
+        <label for="caja">Caja:</label>
+        <input type="text" name="caja" id="caja" required>
+
+        <label for="motor">Motor:</label>
+        <input type="text" name="motor" id="motor" required>
+
+        <label for="fechapub">Fecha de Publicación:</label>
+        <input type="text" name="fechapub" id="fechapub" maxlength="10" required>
+
+        <label for="precio">Precio:</label>
+        <input type="text" name="precio" id="precio" required>
+
+        <label for="moneda">Moneda:</label>
+        <input type="text" name="moneda" id="moneda" maxlength="3" required>
+
+        <label for="cc_pic01">CC Pic01:</label>
+        <input type="text" name="cc_pic01" id="cc_pic01" maxlength="3" required>
+
+        <label for="cc_pic02">CC Pic02:</label>
+        <input type="text" name="cc_pic02" id="cc_pic02" maxlength="85" required>
+
+        <label for="cc_pic03">CC Pic03:</label>
+        <input type="text" name="cc_pic03" id="cc_pic03" maxlength="85" required>
+
+        <label for="cc_desctac">CC Desctac:</label>
+        <input type="text" name="cc_desctac" id="cc_desctac" maxlength="2" required>
+
+        <input type="submit" value="Registrar Auto">
+    </form>
+</body>
+</html>

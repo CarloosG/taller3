@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Registro de autos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+  </head>
+  <body>
+      <section class="hero is-primary is-fullheight">
+          <div class="hero-body">
+              <div class="container">
+                <h1 class="title">Registro de Autos</h1>
+
+                <div class="columns is-5-tablet is-4-desktop is-3-widescreen">
+                    <div class="column">
+                        <form class="box">
+                            <div class="field has-text-centered">
+                                <img src="carro2.jpg" width="167">
+                            </div>
+                            <div class="field">
+                                <label class="label">Id coche</label>
+                                <div >
+                                    <input type="Id coche" class="input" placeholder="Introduce el id del vehiculo" maxlength="11">
+                                </div>
+                            </div>
+                            <div>
+                                <div class="field">
+                                    <label class="label" for="id_movidoa">Tipo de Combustible:</label>
+                                    <div class="control">
+                                        <div class="select">
+                                            <select name="id_movidoa" id="id_movidoa">
+                                                <option value="1">Gasolina</option>
+                                                <option value="2">Diésel</option>
+                                                <option value="3">Eléctrico</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="field">
+                                    <label class="label" for="id_tipocoche">Tipo de Coche:</label>
+                                    <div class="control">
+                                        <div class="select">
+                                            <select name="id_tipocoche" id="id_tipocoche">
+                                                <option value="1">Carro deportivo</option>
+                                                <option value="2">Camioneta</option>
+                                                <option value="3">Familiar</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="field">
+                                    <label class="label" for="estado">Estado:</label>
+                                    <div class="control">
+                                        <div class="select">
+                                            <select name="estado" id="estado">
+                                                <option value="1">Nuevo</option>
+                                                <option value="2">Usado</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="field">
+                                    <label class="label" for="marca">Marca:</label>
+                                    <div class="control">
+                                        <div class="select">
+                                            <select name="marca" id="marca">
+                                                <option value="1">Mercedes benz</option>
+                                                <option value="2">Rolls Royce</option>
+                                                <option value="3">Ferrari</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    
+                                </div>                             
+                            </div>
+                            <div class="field">
+                                <label class="label">Fecha</label>
+                                <div>
+                                    <input type="Id fecha" class="input" placeholder="Introduce la fecha" maxlength="10" >
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label class="label">Usuario</label>
+                                <div>
+                                    <input type="Id usuario" class="input" placeholder="Introduce el usuario">
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label class="label">Modelo</label>
+                                <div>
+                                    <input type="Id modelo" class="input" placeholder="Introduce el modelo del auto" maxlength="60">
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label class="label">Año</label>
+                                <div>
+                                    <input type="Id anio" class="input" placeholder="Introduce el año auto" maxlength="4">
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label class="label">Detalle</label>
+                                <div>
+                                    <input type="Id detalle" class="input" >
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label class="label">Caja</label>
+                                <div>
+                                    <input type="Id caja" class="input" >
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label class="label">Motor</label>
+                                <div>
+                                    <input type="Id motor" class="input" placeholder="Introduce el motor del auto">
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label class="label">Precio</label>
+                                <div>
+                                    <input type="Id precio" class="input" placeholder="Introduce el precio del auto">
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label class="label">Moneda</label>
+                                <div>
+                                    <input type="Id moneda" class="input" placeholder="Introduce el tipo de moneda para pagar" maxlength="3">
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label class="label">CC pic01</label>
+                                <div>
+                                    <input type="Id pic01" class="input" maxlength="85">
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label class="label">CC pic02</label>
+                                <div>
+                                    <input type="Id pic02" class="input" maxlength="85">
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label class="label">CC pic03</label>
+                                <div>
+                                    <input type="Id pic03" class="input" maxlength="85">
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label class="label">CC Destac</label>
+                                <div>
+                                    <input type="Id destac" class="input" maxlength="2">
+                                </div>
+                            </div>
+                            <div class="field">
+                                <button class="button is-success">
+                                    Registrar Auto
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+              </div>
+          </div>
+      </section>
+  </body>
+</html>
